@@ -33,9 +33,6 @@ class Kclvm < Formula
     Dir.glob("lib/*") do |p|
       lib.install p
     end
-    Dir.glob("plugins/*") do |p|
-      plugins.install p
-    end
 
   end
 
