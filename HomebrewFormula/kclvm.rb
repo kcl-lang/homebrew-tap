@@ -26,6 +26,17 @@ class Kclvm < Formula
     bin.install "bin/kclvm"
     bin.install "bin/kclvm_cli"
     bin.install "bin/libkclvm_cli_cdylib.dylib"
+
+    Dir.glob("bin/*") do |p|
+      bin.install p
+    end
+    Dir.glob("lib/*") do |p|
+      lib.install p
+    end
+    Dir.glob("plugins/*") do |p|
+      plugins.install p
+    end
+
   end
 
   test do
