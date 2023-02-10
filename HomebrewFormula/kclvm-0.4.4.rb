@@ -16,25 +16,12 @@ class Kclvm044 < Formula
   end
 
   def install
-    bin.install "bin/kcl"
-    bin.install "bin/kcl-vet"
-    bin.install "bin/kcl-test"
-    bin.install "bin/kcl-plugin"
-    bin.install "bin/kcl-lint"
-    bin.install "bin/kcl-fmt"
-    bin.install "bin/kcl-doc"
-    bin.install "bin/kclvm"
-    bin.install "bin/kclvm_cli"
-    bin.install "bin/libkclvm_cli_cdylib.dylib"
-
-    Dir.glob("bin/*") do |p|
-      bin.install p
-    end
-    Dir.glob("lib/*") do |p|
-      lib.install p
-    end
-
+    prefix.install_metafiles
+    libexec.install Dir["*"]
+    bin.install Dir["#{libexec}/bin/*"]
+    bin.env_script_all_files libexec/"bin", KCL_PLUGINS_ROOT: "#{libexec}/plugins"
   end
+
 
   test do
     system "${bin}/kcl -V"
