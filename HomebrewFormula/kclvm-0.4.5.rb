@@ -7,11 +7,11 @@ class Kclvm045 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.5-darwin-arm64.tar.gz"
-      sha256 "a79f37a7ad372619b8f1250fa1d90c81c016ab54828c0d94f80037ee40e9af67"
+      sha256 "139224d053fc7c90d7064c53f1c1c309209a84da8d496b8cb947e1968ffd24cb"
     end
     if Hardware::CPU.intel?
       url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.5-darwin-amd64.tar.gz"
-      sha256 "a9ecb22f1b51581a688145b64429b0e108220e20eda2e21f479abba587e0d272"
+      sha256 "0eb822221feb53d7c2e6392aebf9a9313f9aea87ab7e0feecab2d205914de953"
     end
   end
 
