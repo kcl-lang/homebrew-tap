@@ -15,6 +15,13 @@ class Kclvm < Formula
     end
   end
 
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.5-linux-amd64.tar.gz"
+      sha256 "e82d1628325d094e6ee4f21005077988190f82d320a32af866e2c68b92fa63c2"
+    end
+  end
+
   def install
     prefix.install_metafiles
     libexec.install Dir["*"]
