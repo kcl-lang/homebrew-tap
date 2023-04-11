@@ -6,19 +6,19 @@ class Kclvm046 < Formula
   
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.5-darwin-arm64.tar.gz"
-        sha256 "139224d053fc7c90d7064c53f1c1c309209a84da8d496b8cb947e1968ffd24cb"
+        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.6/kclvm-v0.4.6-beta.1-darwin-arm64.tar.gz"
+        sha256 "942f73e1f9492a42778de4c5cbf44a4c94ba6df8a2fed776f3a8f39457e58739"
       end
       if Hardware::CPU.intel?
-        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.6-alpha.1-darwin-amd64.tar.gz"
-        sha256 "8bdd8e0410a50979cce5ba8627c3a72107113d56292202543a2b4a0ca402856a"
+        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.6/kclvm-v0.4.6-beta.1-darwin-amd64.tar.gz"
+        sha256 "bb4a4b860da11cf989ccba7a4c8011660ac2193e1c0f2a382ba11ab398c740b5"
       end
     end
   
     on_linux do
       if Hardware::CPU.intel?
-        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.5/kclvm-v0.4.5-linux-amd64.tar.gz"
-        sha256 "e82d1628325d094e6ee4f21005077988190f82d320a32af866e2c68b92fa63c2"
+        url "https://github.com/KusionStack/KCLVM/releases/download/v0.4.6/kclvm-v0.4.6-beta.1-linux-amd64.tar.gz"
+        sha256 "fabb34c1a7bf8bd88453a227665fe1736e041218ba8b991361557bd5120d5ed7"
       end
     end
   
