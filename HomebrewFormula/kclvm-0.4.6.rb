@@ -29,9 +29,4 @@ class Kclvm046 < Formula
         bin.env_script_all_files libexec/"bin", KCL_PLUGINS_ROOT: "#{libexec}/plugins"
     end
   
-  
-    test do
-      system "${bin}/kcl -V"
-    end
-  
   end

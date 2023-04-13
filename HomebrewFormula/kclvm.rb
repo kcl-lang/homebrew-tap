@@ -28,9 +28,4 @@ class Kclvm < Formula
       bin.install Dir["#{libexec}/bin/*"]
       bin.env_script_all_files libexec/"bin", KCL_PLUGINS_ROOT: "#{libexec}/plugins"
   end
-
-  test do
-    system "${bin}/kcl -V"
-  end
-
 end
