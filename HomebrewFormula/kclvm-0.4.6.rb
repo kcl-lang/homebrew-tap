@@ -25,6 +25,7 @@ class Kclvm046 < Formula
     def install
         prefix.install_metafiles
         libexec.install Dir["*"]
+        lib.install Dir["#{libexec}/lib/libkclvm_*.*"]
         bin.install Dir["#{libexec}/bin/*"]
         bin.env_script_all_files libexec/"bin", KCL_PLUGINS_ROOT: "#{libexec}/plugins"
     end
