@@ -24,6 +24,7 @@ class KclLangServer < Formula
 
   def install
       prefix.install_metafiles
+      libexec.install Dir["*"]
       bin.install "#{libexec}/bin/kcl-language-server"
   end
 end
