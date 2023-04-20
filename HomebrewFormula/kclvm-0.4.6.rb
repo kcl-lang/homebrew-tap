@@ -1,4 +1,4 @@
-class Kclvm < Formula
+class Kclvm046 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
   version "0.4.6"
