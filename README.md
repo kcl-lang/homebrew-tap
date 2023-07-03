@@ -15,7 +15,7 @@ brew install kclvm
 
 | Repository | Formula | Description |
 | ---------- | ------- | ----------- |
-| [KCLVM](https://github.com/KusionStack/KCLVM) | [formula](HomebrewFormula/kclvm.rb) | A constraint-based record & functional language mainly used in configuration and policy scenarios. |
+| [KCL](https://github.com/kcl-lang/kcl) | [formula](HomebrewFormula/kclvm.rb) | A constraint-based record & functional language mainly used in configuration and policy scenarios. |
 
 ## Documentation
 
