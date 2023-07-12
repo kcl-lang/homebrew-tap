@@ -18,7 +18,7 @@ class Kclvm < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.5.0/kclvm-v0.5.0-linux-amd64.tar.gz"
-      sha256 "0da2a7e8f6c406683ae1515c4470554de5a4c21d0263f836dc4e0042308dbd8d"
+      sha256 "33088954ef2980de51b257cbb28dda2789ab11a729f72b79cbec3af773109d7e"
     end
   end
 
