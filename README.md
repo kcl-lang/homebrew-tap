@@ -8,14 +8,14 @@ Auto release Homebrew Taps by GoReleaser reference this [document](https://gorel
 
 ```bash
 brew tap kcl-lang/tap
-brew install kclvm
+brew install kcl
 ```
 
 ## Formulae
 
 | Repository | Formula | Description |
 | ---------- | ------- | ----------- |
-| [KCL](https://github.com/kcl-lang/kcl) | [formula](HomebrewFormula/kclvm.rb) | A constraint-based record & functional language mainly used in configuration and policy scenarios. |
+| [KCL](https://github.com/kcl-lang/kcl) | [formula](HomebrewFormula/kcl.rb) | A constraint-based record & functional language mainly used in configuration and policy scenarios. |
 
 ## Documentation
 
