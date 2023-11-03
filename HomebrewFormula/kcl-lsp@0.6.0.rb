@@ -1,4 +1,4 @@
-class Kcl < Formula
+class KclLspAt060 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
   version "0.6.0"
@@ -23,9 +23,8 @@ class Kcl < Formula
   end
 
   def install
-      prefix.install_metafiles
-      libexec.install Dir["*"]
-      bin.install Dir["#{libexec}/bin/*"]
-      bin.env_script_all_files libexec/"bin", KCL_PLUGINS_ROOT: "#{libexec}/plugins", KCLVM_LIB_LINK_PATH: "#{libexec}/bin"
+    prefix.install_metafiles
+    libexec.install Dir["*"]
+    bin.install "#{libexec}/bin/kcl-language-server"
   end
 end
