@@ -1,4 +1,4 @@
-class KclLspAt060 < Formula
+class KclLspAT060 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
   version "0.6.0"
