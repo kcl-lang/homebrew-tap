@@ -8,6 +8,8 @@ class KclAT070 < Formula
   version "0.7.0-alpha.1"
   license "Apache License"
 
+  depends_on "kcl-lsp@0.7.0"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-alpha.1/kcl-v0.7.0-alpha.1-darwin-arm64.tar.gz", using: CurlDownloadStrategy
