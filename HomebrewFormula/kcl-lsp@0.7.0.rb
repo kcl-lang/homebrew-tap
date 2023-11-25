@@ -6,19 +6,19 @@ class KclLspAT070 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-alpha.2/kclvm-v0.7.0-alpha.2-darwin-arm64.tar.gz"
-      sha256 "7c157b35910cc72651b5c28684463fbdcba8700a0de0a8d0f345c0b2c317d18b"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-darwin-arm64.tar.gz"
+      sha256 "f9720d46ef28dd2002d2535c3bee6036613bef8318b4912f92c3c39c6a5c4486"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-alpha.2/kclvm-v0.7.0-alpha.2-darwin-amd64.tar.gz"
-      sha256 "544631966ca8c345e639e964d031e825591abe7da21033b50a00af76e0624d66"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-darwin-amd64.tar.gz"
+      sha256 "cea8f10d388f4e62a9b3e645a4539c5e160c2c549a0c6684524b865bd49ea6fb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-alpha.2/kclvm-v0.7.0-alpha.2-linux-amd64.tar.gz"
-      sha256 "e44f4dde4fbf86207c513bd69a845b6f389594b62fd303b1deec6f4286a7262e"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-linux-amd64.tar.gz"
+      sha256 "020070f9c3e6b2298ce76839aaa8df7f5ec039a5d807a3119a6ac91d170f25b8"
     end
   end
 
