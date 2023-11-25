@@ -5,23 +5,23 @@
 class KclAT070 < Formula
   desc "KCL Command Line Interface"
   homepage "https://github.com/kcl-lang/kcl"
-  version "0.7.0-alpha.2"
+  version "0.7.0-beta.1"
   license "Apache License"
 
   depends_on "kcl-lsp@0.7.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-alpha.2/kcl-v0.7.0-alpha.2-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4dc9e0e7ee0d8c9e8d770e94731af6ce90ab3bef293f44a4091adbba7465b8be"
+    if Hardware::CPU.arm?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-beta.1/kcl-v0.7.0-beta.1-darwin-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "c058ad822df2e55508e9306762e45b3a835153ac5b5e900825fdcd49b38bc59f"
 
       def install
         bin.install "kcl"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-alpha.2/kcl-v0.7.0-alpha.2-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "f1908a24a1ac0258773180d8a8edaf7c5ccde0add2eba30dc272a5d3f30d7e85"
+    if Hardware::CPU.intel?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-beta.1/kcl-v0.7.0-beta.1-darwin-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0395bf51f2fac90356446b2b75e56f067b7d71c5647afce231a385785b431c7a"
 
       def install
         bin.install "kcl"
@@ -31,16 +31,16 @@ class KclAT070 < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-alpha.2/kcl-v0.7.0-alpha.2-linux-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "111e909024f425b35ba595aff8cba21a58a88b969251f9a0813da0f16e822882"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-beta.1/kcl-v0.7.0-beta.1-linux-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f4413fc5408f108a7b9d4f351e66711d1e01b3b2ed5ef1055624d46eccab3c17"
 
       def install
         bin.install "kcl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-alpha.2/kcl-v0.7.0-alpha.2-linux-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c171c7e89a3ca022f5755e3abcf65968b92360a8c0a858c7de1e663c626d8afb"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.7.0-beta.1/kcl-v0.7.0-beta.1-linux-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2c4082da4341c8043ea43a3a869bb6430b46fb4328138b98fecaa4d5f826d795"
 
       def install
         bin.install "kcl"
