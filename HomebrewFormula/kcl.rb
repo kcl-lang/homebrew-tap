@@ -8,7 +8,7 @@ class Kcl < Formula
   version "0.7.0-beta.2"
   license "Apache License"
 
-  depends_on "kcl-lsp@0.7.0"
+  depends_on "kcl-lsp"
 
   on_macos do
     if Hardware::CPU.arm?
