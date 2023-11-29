@@ -1,24 +1,24 @@
 class KclLspAT070 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
-  version "0.7.0-alpha.2"
+  version "0.7.0-beta.2"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-darwin-arm64.tar.gz"
-      sha256 "f9720d46ef28dd2002d2535c3bee6036613bef8318b4912f92c3c39c6a5c4486"
+      url "https://github.com/kcl-lang/kcl/releases/download/0.7.0-beta.2/kclvm-0.7.0-beta.2-darwin-arm64.tar.gz"
+      sha256 "51c06fb14b87dc96c80a861986ddfb12e45cd066992f3d05a3aa695f04265589"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-darwin-amd64.tar.gz"
-      sha256 "cea8f10d388f4e62a9b3e645a4539c5e160c2c549a0c6684524b865bd49ea6fb"
+      url "https://github.com/kcl-lang/kcl/releases/download/0.7.0-beta.2/kclvm-0.7.0-beta.2-darwin-amd64.tar.gz"
+      sha256 "fd577860a80f2ce1632bbdd3ce04728e8ccf6fdb9fcf82b966381e27aedc35af"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0-beta.1/kclvm-v0.7.0-beta.1-linux-amd64.tar.gz"
-      sha256 "020070f9c3e6b2298ce76839aaa8df7f5ec039a5d807a3119a6ac91d170f25b8"
+      url "https://github.com/kcl-lang/kcl/releases/download/0.7.0-beta.2/kclvm-0.7.0-beta.2-linux-amd64.tar.gz"
+      sha256 "05c7d808703678dbf430deeb0d0f0e8be369417b5011e3ad06acbb90bcd458f8"
     end
   end
 
