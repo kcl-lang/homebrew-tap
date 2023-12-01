@@ -11,7 +11,7 @@ class KclLsp < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0/kclvm-v0.7.0-darwin-amd64.tar.gz"
-      sha256 "2dfc6ad864e2ee25ab4c380fcc2f2fdaa2ae1814b659446523cbbfa3d2b6d832"
+      sha256 "762019f4af13e05160fc6488666db3a8fa5043fc8aa713235c9cf202bc4f5390"
     end
   end
 
