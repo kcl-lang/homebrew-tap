@@ -11,14 +11,14 @@ class KclLspAT070 < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0/kclvm-v0.7.0-darwin-amd64.tar.gz"
-      sha256 "117747a069974216a34ec61f30f1c28f500e8dedd757a5e1d3c375a810407b88"
+      sha256 "2dfc6ad864e2ee25ab4c380fcc2f2fdaa2ae1814b659446523cbbfa3d2b6d832"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.0/kclvm-v0.7.0-linux-amd64.tar.gz"
-      sha256 "05c7d808703678dbf430deeb0d0f0e8be369417b5011e3ad06acbb90bcd458f8"
+      sha256 "117747a069974216a34ec61f30f1c28f500e8dedd757a5e1d3c375a810407b88"
     end
   end
 
