@@ -13,7 +13,7 @@ class KclAT072 < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/cli/releases/download/v0.7.2/kcl-v0.7.2-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "bb24bcac1225478c960c3f44bbbc4ea7d90b3d69fb86cc257177d886eacaadaf"
+      sha256 "440e5a4f9aecda7eb336163a0ede2f51a429c492ac731e75b66f44b7e716dbda"
 
       def install
         bin.install "kcl"
@@ -21,7 +21,7 @@ class KclAT072 < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/cli/releases/download/v0.7.2/kcl-v0.7.2-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2b649047a258c1ff48039e4cd3ea44896bd46cdc7efbcf377667e4a2fee4279f"
+      sha256 "fdeb5dad670936f90bde1723a505fd271b80f510d3af5f633481ebb710b0337c"
 
       def install
         bin.install "kcl"
@@ -32,7 +32,7 @@ class KclAT072 < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kcl-lang/cli/releases/download/v0.7.2/kcl-v0.7.2-linux-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e9c283070dcc1d6f9e106d8876a08cdeeb3db1580ad347402d9f806983bc9891"
+      sha256 "75a46fcee1fe2389c87aed1134a48bf1c8e1fecc52b0afea8992784e432d062b"
 
       def install
         bin.install "kcl"
@@ -40,7 +40,7 @@ class KclAT072 < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/cli/releases/download/v0.7.2/kcl-v0.7.2-linux-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "3dd08051872a2a2d1ad2930865c566e1bdbb9b3d834279d46145283675259302"
+      sha256 "2e70787139efa61689b0252a3582b4e9d4169b65adebb802e43f0176269bc2c7"
 
       def install
         bin.install "kcl"
