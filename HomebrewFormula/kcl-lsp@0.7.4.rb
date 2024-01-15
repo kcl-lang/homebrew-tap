@@ -1,4 +1,4 @@
-class KclLsp < Formula
+class KclLspAT074 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
   version "0.7.4"
