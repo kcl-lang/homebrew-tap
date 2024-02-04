@@ -18,7 +18,7 @@ class KclLsp < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.5/kclvm-v0.7.5-linux-amd64.tar.gz"
-      sha256 "769fa0edfecaf1a40fb5b7996125fdf69b64039d952500785bf01b796aefdc6e"
+      sha256 "3d85408e41f30f78f2f751b9fc3403c0bd5a058a08bd8d3c6bdf52c42dec76ba"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.5/kclvm-v0.7.5-linux-arm64.tar.gz"
