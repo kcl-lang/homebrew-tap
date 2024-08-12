@@ -5,23 +5,23 @@
 class Kcl < Formula
   desc "KCL Command Line Interface"
   homepage "https://github.com/kcl-lang/kcl"
-  version "0.9.7"
+  version "0.9.8"
   license "Apache License"
 
   depends_on "kcl-lsp"
 
   on_macos do
     on_intel do
-      url "https://github.com/kcl-lang/cli/releases/download/v0.9.7/kcl-v0.9.7-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "e7faf54525dc68690ca036b382abf7865b030e4d3a87beafcd41589f4f5e4907"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.9.8/kcl-v0.9.8-darwin-amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "fcd914979f2225a6ca16fef833a9bab2fa56bcd1dec697773013786161cbe428"
 
       def install
         bin.install "kcl"
       end
     end
     on_arm do
-      url "https://github.com/kcl-lang/cli/releases/download/v0.9.7/kcl-v0.9.7-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "be748072308835d9ca5109bcd71ae5731fbcd5f5fad9e34895ed152aeab30116"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.9.8/kcl-v0.9.8-darwin-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "93619c86fe1130147f1654be86f30e02a288f510d87e4bdc36c0416512756be4"
 
       def install
         bin.install "kcl"
@@ -32,8 +32,8 @@ class Kcl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kcl-lang/cli/releases/download/v0.9.7/kcl-v0.9.7-linux-amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "8ee23a381b36e664cab956c3b2d9e116a93eb949b510f563cee61b5d40c6de2f"
+        url "https://github.com/kcl-lang/cli/releases/download/v0.9.8/kcl-v0.9.8-linux-amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "b1473a37ccb4b5985fbd8ac5d224b0a6ae21da39ce9a2ccb09238316de8de8be"
 
         def install
           bin.install "kcl"
@@ -42,8 +42,8 @@ class Kcl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kcl-lang/cli/releases/download/v0.9.7/kcl-v0.9.7-linux-arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "6801d5dca9b9595b5be8ac2ad814dc28fb6f07c3e38183c4e3abde67301e3c43"
+        url "https://github.com/kcl-lang/cli/releases/download/v0.9.8/kcl-v0.9.8-linux-arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "3f5cbb29ca03c1bd89435f7f4c455edba4d6a60968773e0675efbb0734c98fec"
 
         def install
           bin.install "kcl"
