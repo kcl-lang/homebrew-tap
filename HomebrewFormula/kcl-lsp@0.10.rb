@@ -1,28 +1,28 @@
 class KclLspAT010 < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
-  version "0.10.6"
+  version "0.10.7"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.6/kclvm-v0.10.6-darwin-amd64.tar.gz"
-      sha256 "1a7f88b44ed2d34f7324269cd8648aeb894fa3770b0e8e58d38a922cf9b70786"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.7/kclvm-v0.10.7-darwin-amd64.tar.gz"
+      sha256 "11374ba5f96764123a7f63b6748677dda409e03f2ddde92db27ea8aff1d7247c"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.6/kclvm-v0.10.6-darwin-arm64.tar.gz"
-      sha256 "823aff64719f81235c12fb16608a4852fadb5aeb3048d31e780a9242dcf85bb9"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.7/kclvm-v0.10.7-darwin-arm64.tar.gz"
+      sha256 "10433acb7848514579d3515063862f13b5e76e59971e42ad2b8650e8ec013d17"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.6/kclvm-v0.10.6-linux-amd64.tar.gz"
-      sha256 "ef6c3638a11e091150f9f165f55d1efa1d32024d17688300db797a31831ecbab"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.7/kclvm-v0.10.7-linux-amd64.tar.gz"
+      sha256 "d50a67037b6d9637d051d1f9f4aaf68521636a64f4524ea1d4b6e3fdc8e5a1b5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.6/kclvm-v0.10.6-linux-arm64.tar.gz"
-      sha256 "b799c0604d3c7eff778a9c24b19b9a784e3c094cd91f0630e0527d7642ca46d6"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.10.7/kclvm-v0.10.7-linux-arm64.tar.gz"
+      sha256 "b5fadb779747531f7944ffcf511a793a7d57454efdf0333b72e85de86801d490"
     end
   end
 
