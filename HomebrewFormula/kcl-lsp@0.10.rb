@@ -7,22 +7,22 @@ class KclLspAT010 < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.10.8/kclvm-v0.10.8-darwin-amd64.tar.gz"
-      sha256 "11374ba5f96764123a7f63b6748677dda409e03f2ddde92db27ea8aff1d7247c"
+      sha256 "ea993fb2d95450bebeab69d362e1803ea8918b7c51b3a9e449b7a59d23ab4cfb"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.10.8/kclvm-v0.10.8-darwin-arm64.tar.gz"
-      sha256 "10433acb7848514579d3515063862f13b5e76e59971e42ad2b8650e8ec013d17"
+      sha256 "738bff9e4a6fcaae0dcfbee2b1378d359612a08b35179fb73e1ef81ad9347a37"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.10.8/kclvm-v0.10.8-linux-amd64.tar.gz"
-      sha256 "d50a67037b6d9637d051d1f9f4aaf68521636a64f4524ea1d4b6e3fdc8e5a1b5"
+      sha256 "4b6b7365bf190d0a52f58ad3589afc6d63ba2af7a75fdbd5cb6fe8f78cf42d42"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.10.8/kclvm-v0.10.8-linux-arm64.tar.gz"
-      sha256 "b5fadb779747531f7944ffcf511a793a7d57454efdf0333b72e85de86801d490"
+      sha256 "725b7a862c843d039d39ff94268e63473b29891b6176d60809e60c84ff3ad615"
     end
   end
 

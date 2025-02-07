@@ -52,4 +52,3 @@ class KclAT080 < Formula
       system "#{bin}/kcl version"
     end
   end
-  
