@@ -22,7 +22,7 @@ class KclLspAT074 < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.7.4/kclvm-v0.7.4-linux-arm64.tar.gz"
-      sha256 "22ae6243218912728e53376aa68a978a4e69e01ac2fd4380a3cbb8b3ec3f370ab"
+      sha256 "2ae6243218912728e53376aa68a978a4e69e01ac2fd4380a3cbb8b3ec3f370ab"
     end
   end
 
