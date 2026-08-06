@@ -5,54 +5,42 @@
 class Kcl < Formula
   desc "KCL Command Line Interface"
   homepage "https://github.com/kcl-lang/kcl"
-  version "0.12.3"
-  license "Apache License"
-
-  depends_on "kcl-lsp"
+  version "0.12.8"
+  license "Apache-2.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.3/kcl-v0.12.3-darwin-amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4cdaecd0624060dbf9ad9e55212d5bc1c48e4279dfcae6a97fe27cf95924b426"
+    if Hardware::CPU.intel?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-amd64.tar.gz"
+      sha256 "d8d543d292229cb3d9b3fc70ffeebbae51546faa3427099368ac425b2ddd679b"
 
-      def install
+      define_method(:install) do
         bin.install "kcl"
       end
     end
-    on_arm do
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.3/kcl-v0.12.3-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "70a971f4cd3b7ed676d340dd108e8cc27f6d961889fd300bc05f32fdf69faade"
+    if Hardware::CPU.arm?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-arm64.tar.gz"
+      sha256 "04540caaf9977249d2903a181392d22dcb3c64fa8e71ba06e2dbe949aeb99e2d"
 
-      def install
+      define_method(:install) do
         bin.install "kcl"
       end
     end
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/kcl-lang/cli/releases/download/v0.12.3/kcl-v0.12.3-linux-amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "c7bb8693e2953cc8e44620ebac6bba4c40663cef1642ee2c826f78171ba1cd6c"
-
-        def install
-          bin.install "kcl"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-amd64.tar.gz"
+      sha256 "e8e5375d1a6a18ca96e6bdcc1fe993cc33dc409ef50a7e55e8b476ee4e24b248"
+      define_method(:install) do
+        bin.install "kcl"
       end
     end
-    on_arm do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/kcl-lang/cli/releases/download/v0.12.3/kcl-v0.12.3-linux-arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "74203bca5dc28ddc5cb15b3aeff8f07368edac579a5030e3bb08f1240017e5ea"
-
-        def install
-          bin.install "kcl"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-arm64.tar.gz"
+      sha256 "7d8e291445d2604d076c6862a05708de854322494f46c78444641db9420c46fa"
+      define_method(:install) do
+        bin.install "kcl"
       end
     end
-  end
-
-  test do
-    system "#{bin}/kcl version"
   end
 end
