@@ -11,7 +11,7 @@ class Kcl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-amd64.tar.gz"
-      sha256 "d8d543d292229cb3d9b3fc70ffeebbae51546faa3427099368ac425b2ddd679b"
+      sha256 "3a9c5830493adbed89c9caa5cc95fbbcc5c3b7eafed518b2793f2dfae3523fde"
 
       define_method(:install) do
         bin.install "kcl"
@@ -19,7 +19,7 @@ class Kcl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-arm64.tar.gz"
-      sha256 "04540caaf9977249d2903a181392d22dcb3c64fa8e71ba06e2dbe949aeb99e2d"
+      sha256 "70a0596055a6502ae3ad008af4bfe8b03c5378ce3031be1d7bf7bf397e319fe6"
 
       define_method(:install) do
         bin.install "kcl"
@@ -30,14 +30,14 @@ class Kcl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-amd64.tar.gz"
-      sha256 "e8e5375d1a6a18ca96e6bdcc1fe993cc33dc409ef50a7e55e8b476ee4e24b248"
+      sha256 "6d0014433469ffac3d14e86dcdf6ae6fa1edd465b10599d6d5b187543a6ebc40"
       define_method(:install) do
         bin.install "kcl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-arm64.tar.gz"
-      sha256 "7d8e291445d2604d076c6862a05708de854322494f46c78444641db9420c46fa"
+      sha256 "6c34cc6fe861cb1a51dffc3d5060329b704907b7a9a2afd080fc7e16f9aadc57"
       define_method(:install) do
         bin.install "kcl"
       end
