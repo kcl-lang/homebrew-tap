@@ -5,21 +5,21 @@
 class Kcl < Formula
   desc "KCL Command Line Interface"
   homepage "https://github.com/kcl-lang/kcl"
-  version "0.12.8"
+  version "0.12.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-amd64.tar.gz"
-      sha256 "98d22a5670169c2f20dd20af1aa82df1252c087771e98011680e13ff9038a575"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.9/kcl-v0.12.9-darwin-amd64.tar.gz"
+      sha256 "b79c977d0765f5bb7623a64f7be70f4825fa1e5c94316087c2554ade54ced4e5"
 
       define_method(:install) do
         bin.install "kcl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-darwin-arm64.tar.gz"
-      sha256 "1d338f3eec00bb75ee1af505ed843dacffbc197bddc4c6476a84783b4d6dd172"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.9/kcl-v0.12.9-darwin-arm64.tar.gz"
+      sha256 "e2c431da1ae3ac43cdc6dc1299bb1e2306d8cb0f63f6572f4a4f3090036d05a7"
 
       define_method(:install) do
         bin.install "kcl"
@@ -29,15 +29,15 @@ class Kcl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-amd64.tar.gz"
-      sha256 "8b663e88a9f679e129e4e60dd7dcd0641a1c8dd679adfcc24120f8fa5ef1cbb3"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.9/kcl-v0.12.9-linux-amd64.tar.gz"
+      sha256 "b2c10321e48e0aaef1ea883df174f76407fe76e5c1d8c900f85931449aac44f1"
       define_method(:install) do
         bin.install "kcl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kcl-lang/cli/releases/download/v0.12.8/kcl-v0.12.8-linux-arm64.tar.gz"
-      sha256 "0e7a67486cdcfec7c810fe6f107cad5da1a46deb0c17826aa010b06197661369"
+      url "https://github.com/kcl-lang/cli/releases/download/v0.12.9/kcl-v0.12.9-linux-arm64.tar.gz"
+      sha256 "666b201a7819cab36dcaebe1e0e1a156c037afab73a6c097a1d3e14b1b9f631a"
       define_method(:install) do
         bin.install "kcl"
       end
