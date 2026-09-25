@@ -18,11 +18,11 @@ class KclLspAT0130 < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-linux-amd64.tar.gz"
-      sha256 "fb8205232206845ae5b833410c3166248fd38f3b289df3dc6bbaca1f42cedb14"
+      sha256 "59871434511782ed5ff23f3a2f0bf37b1fe8c5974665db1d2fd3b184fc6cac46"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-linux-arm64.tar.gz"
-      sha256 "3f65d9d20fb5d9c0f06f51f86e4f6a62e22f05052a261ed1cf5db2ddda2c0e6e"
+      sha256 "23342fa60de1b6924fd1f429e84d0460033420c2ebd0224cca6eb8b39f963f03"
     end
   end
 
