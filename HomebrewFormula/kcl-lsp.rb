@@ -1,28 +1,28 @@
 class KclLsp < Formula
   desc "A constraint-based record & functional language mainly used in configuration and policy scenarios."
   homepage "https://kcl-lang.io"
-  version "0.13.0"
+  version "0.13.2"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-darwin-amd64.tar.gz"
-      sha256 "cd4d1828a4cdc3224a99f42227bdc0e19a0dd6d97a93c297f752050b7d6f2f9b"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-darwin-amd64.tar.gz"
+      sha256 "e0bced97fe9216ac36bfc456c50112b49e0a1ae668e0d371431927d52682d55e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-darwin-arm64.tar.gz"
-      sha256 "48ec9e765b134cf4add04ef8963442468c38bbe3f2ad8c1f0553130d7ebff7bc"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-darwin-arm64.tar.gz"
+      sha256 "09cc18d7a992b5ea77f30afea910128cb3d9b42e3c5dbf5d2cbdc614360906ba"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-linux-amd64.tar.gz"
-      sha256 "59871434511782ed5ff23f3a2f0bf37b1fe8c5974665db1d2fd3b184fc6cac46"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-linux-amd64.tar.gz"
+      sha256 "07acb37cf6ebe95775c3643bd1ae025acf830e5d5716fc197c32cc97f6841f12"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.0/kcl-language-server-v0.13.0-linux-arm64.tar.gz"
-      sha256 "23342fa60de1b6924fd1f429e84d0460033420c2ebd0224cca6eb8b39f963f03"
+      url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-linux-arm64.tar.gz"
+      sha256 "03910f485788b430ca57cb4a891f21ef969f00873376a956dd600c81fbc2839e"
     end
   end
 
