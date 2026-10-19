@@ -7,22 +7,22 @@ class KclLsp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-darwin-amd64.tar.gz"
-      sha256 "e0bced97fe9216ac36bfc456c50112b49e0a1ae668e0d371431927d52682d55e"
+      sha256 "208cc068de7135e470c0135af6416c1c095b6bb077d0db3dba02dc09c031c195"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-darwin-arm64.tar.gz"
-      sha256 "09cc18d7a992b5ea77f30afea910128cb3d9b42e3c5dbf5d2cbdc614360906ba"
+      sha256 "445176382764b61aaec2472eae3821c4f6873b04203a7f1e2a6b3848b9dd0fc7"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-linux-amd64.tar.gz"
-      sha256 "07acb37cf6ebe95775c3643bd1ae025acf830e5d5716fc197c32cc97f6841f12"
+      sha256 "753f63d1bd2d188fbf7168838bf9f2792f303360ec2a330135a234b5f80321b4"
     end
     if Hardware::CPU.arm?
       url "https://github.com/kcl-lang/kcl/releases/download/v0.13.2/kcl-language-server-v0.13.2-linux-arm64.tar.gz"
-      sha256 "03910f485788b430ca57cb4a891f21ef969f00873376a956dd600c81fbc2839e"
+      sha256 "db040a0d999944a4b8d7244ba20151c399ae7f4d4a0da20d16ba3a4f638791ff"
     end
   end
 
